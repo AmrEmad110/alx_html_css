@@ -1,0 +1,265 @@
+/* Reset CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --max-width: 1000px;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/* Global styles */
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: #fff;
+  max-width: var(--max-width);
+  position: relative;
+  margin: 0 auto;
+  
+  scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1000;   
+}
+  
+.navbar img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: url('./images/headphones_hero_1.jpg') center/cover no-repeat;
+  padding: 3rem 1rem;
+  text-align: center;
+  z-index: 1;
+  padding-top: 240px;
+}
+
+.hero .features {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+}
+
+.hero h1 {
+  font-size: 25px;
+}
+
+.hero .description {
+  font-size: 13px;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:active {
+  opacity: 0.9;
+}
+
+ .subtext {
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 0 80px  0;
+}
+
+/* What We Do */
+.what-we-do{
+    position: relative;
+    padding: 80px 30px;
+    /* background-color: bisque; */
+}
+.media-description{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-size: 13px;
+    text-align: center;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin: 0 20px;
+}
+.media-items i {
+  font-size: 60px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.media-item-description {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+/* our results */
+.our-results{
+    position: relative;
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 30px;
+}
+.result-description{
+    max-width: 600px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    position: relaative;
+}
+
+.result-img{
+    width: 120px;
+    position: relative;
+}
+
+.result-item {
+    position: relative;
+}
+
+.percent {
+    position: absolute;
+    top: 35%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+}
+/* Contact us */
+.contact-form{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+hr{
+    margin: 90px 0;
+}
+/* footer */
+.footer{
+    background-color: #071629;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 60px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    padding: 50px 40px;
+}
+.footer-logo {
+    height: 50px;
+}
+.footer-links{
+    display: flex;
+    gap: 20px;
+}
+.footer-links li {
+    font-size: 40px;
+}
+.footer-text {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 100;
+}
+
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
