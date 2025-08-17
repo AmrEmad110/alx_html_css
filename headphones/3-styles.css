@@ -210,17 +210,10 @@ hr{
 
 
 /* Responsive */
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .nav-links {
-    flex-direction: column;
-    gap: 0.8rem;
+    display: none;
   }
-  
-  .navbar {
-    flex-direction: column;
-  }
-  
-  .hero h1 {
-    font-size: 1.5rem;
-  }
+
+
 }

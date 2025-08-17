@@ -249,17 +249,35 @@ hr{
 
 
 /* Responsive */
-@media (max-width: 480px) {
+/* tablet */
+@media (max-width:900px){
+  .media{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .percent{
+    left: 15%;
+  }
+  .text{
+    left: 15%;
+  }
+
+}
+/* mobile */
+
+@media (max-width: 620px) {
   .nav-links {
-    flex-direction: column;
-    gap: 0.8rem;
+    display: none;
   }
   
-  .navbar {
-    flex-direction: column;
+  .percent{
+    left: 30%;
   }
-  
-  .hero h1 {
-    font-size: 1.5rem;
+  .text{
+    left: 30%;
   }
 }
